@@ -6,7 +6,7 @@ WORKDIR /backend
 # Copy all local files to image.
 COPY . .
 
-# When build image:
+# When build image:                     ---> -p yoksa oluştur varsa dokunma demek aslında. Hata vermesini istemiyorum
 RUN mkdir -p logs
 RUN mkdir -p upload
 RUN npm install
