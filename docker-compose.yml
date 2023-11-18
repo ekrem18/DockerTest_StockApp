@@ -29,7 +29,7 @@ services:
 
 # --------------------------------
 # $ docker compose up                   # compose çalıştır.
-# $ docker compose up -d --build        # compose daemon aç ve tekrar build et.
-# $ docker compose down                 # compose kapat.
+# $ docker compose up -d --build        # compose daemon aç ve varsa değişklik onu da algılıyor tekrar build ediyor.
+# $ docker compose down                 # compose kapat. container'lar siliniyor görünüyor. 
 # $ docker compose down -v              # compose tümünü kapat.
         
