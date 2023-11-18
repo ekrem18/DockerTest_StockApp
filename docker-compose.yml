@@ -23,7 +23,8 @@ services:
             - 8000:8000
         restart: on-failure
         volumes:
-            # fiziksel yollar (external:internal)
+            # fiziksel yollar (external:internal) docker down yapıldığında sqLite gibi DB'de bilgi kaybı olmaması için localdeki log'la container'ı bağladım
+            # : dan sol taraf local'i, sağ tarafta içi temsil ediyor.
             - $PWD/backend/logs:/backend/logs
             - $PWD/backend/upload:/backend/upload
 
